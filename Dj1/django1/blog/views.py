@@ -1,0 +1,10 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
+def home(request):
+    return HttpResponse("welcome to the blog home page")
+
+def about(request):
+    a=10+40
+    return HttpResponse(f"about page{a}")
